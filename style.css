@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* SECTION 1: UNITS */
+.units-section {
+  padding: 20px;
+  background-color: #e0f7fa;
+}
+
+.units-box {
+  width: 60%;
+  height: 100px;
+  background-color: #00796b;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 1.5rem;
+}
+
+/* SECTION 2: POSITION */
+.position-section {
+  padding: 40px;
+  background-color: #fce4ec;
+  position: relative;
+}
+
+.static-box {
+  background: #c2185b;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.absolute-box {
+  background: #ad1457;
+  color: white;
+  width: 150px;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* SECTION 3: DISPLAY */
+.display-section {
+  background-color: #fff3e0;
+  padding: 20px;
+}
+
+.inline {
+  display: inline;
+  background: #f57c00;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+}
+
+.block {
+  display: block;
+  background: #ef6c00;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* SECTION 4: FLEXBOX */
+.flex-section {
+  background-color: #e8f5e9;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.flex-item {
+  background: #388e3c;
+  color: white;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+/* SECTION 5: GRID */
+.grid-section {
+  background-color: #ede7f6;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.grid-item {
+  background: #673ab7;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* RESPONSIVO COM MEDIA QUERY */
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: red; /* só para ver mudança no teste */
+  }
+}
